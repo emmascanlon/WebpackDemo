@@ -1,0 +1,1 @@
+(()=>{"use strict";var t=document.querySelector("#count-button"),e=document.querySelector("#number"),n=0;function c(){e.textContent=n}t.addEventListener("click",(function(){n++,c()})),c()})();
