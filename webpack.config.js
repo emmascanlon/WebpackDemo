@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: './src/js/app.js',
@@ -18,10 +19,12 @@ module.exports = {
                 use: ['style-loader', 'css-loader']
             }
         ]
-   }
-//     plugins: [
-//         new webpack.optimize.UglifyJsPlugin({
-// // you could specify how you minify the bundle file.  That's why you might want to do this instead of using -p
-//         })
-//     ]
+   },
+   plugins: [
+       new HtmlWebpackPlugin({
+           title: 'Webpack demo',
+           filename: 'something-other-than-index.html',
+           inject: 'body',
+       })
+   ]
 }
