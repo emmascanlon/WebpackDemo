@@ -1,3 +1,5 @@
+import {countButton, numberDisplay} from './dom-loader';
+
 var number = 0;
 countButton.addEventListener('click', addOneToNumber);
 updateNumberDisplayed();
