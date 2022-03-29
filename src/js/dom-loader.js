@@ -1,2 +1,2 @@
-var countButton = document.querySelector("#count-button");
-var numberDisplay = document.querySelector('#number');
+export var countButton = document.querySelector("#count-button");
+export var numberDisplay = document.querySelector('#number-div');
